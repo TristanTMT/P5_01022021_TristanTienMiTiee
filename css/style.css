@@ -208,7 +208,7 @@
   cursor: pointer;
 }
 
-#prixTotalPanier {
+.total {
   font-size: 30px;
   font-family: 'Poppins', sans-serif;
   color: #2C3A47;
@@ -480,15 +480,15 @@ ul li {
   #cards {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1340px) {
   #cards {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 

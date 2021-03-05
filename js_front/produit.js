@@ -45,7 +45,7 @@ fetch(`http://localhost:3000/api/teddies/${targetId()}`)
         <div class="product__infos--description">${data.description}</div>
         <form class="product__infos--options optionsBox">
             <label for="option">Couleur :</label>
-            <select name="option" id="colorOptions">
+            <select name="option" id="colorOptions" class="section__choice">
                 ${colors}
             </select>
         </form>
@@ -70,7 +70,10 @@ fetch(`http://localhost:3000/api/teddies/${targetId()}`)
 
     /* Agir sur le buton Ajouter au panier */
     document.querySelector(".button").addEventListener("click", () => {
-        // alert(`${data.name} a été ajouté dans le panier`);
+        let colorChoice = document.querySelector(".section__choice");
+        // HTMLSelectElement.selectedIndex est un long qui représente l'index du premier élément sélectionné <option> : MDN
+        data.selectColors = colorChoice.options[colorChoice.selectedIndex].value;
+        alert(`${data.name} a été ajouté dans le panier`);
         addToLocalStorage(data);
         // window.location.reload();
     });
