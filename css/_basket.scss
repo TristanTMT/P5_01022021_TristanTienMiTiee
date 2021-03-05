@@ -6,10 +6,30 @@
     max-width: 100%;
 }
 
+.cardPanier a span{
+    position: absolute;
+    margin-top:23px;
+    margin-left:-35px;
+    color:#00917c;
+    background: #ffe3fe;
+    padding:15px;
+    border-radius:3px;
+    box-shadow:0 0 2px rgba(0,0,0,.5);
+    transform:scale(0) rotate(-5deg);
+    transition: transform 330ms ease-in-out;
+}
+.cardPanier a:hover span, .cardPanier a:focus span{
+    transform:scale(1) rotate(0deg);
+}
+
 .cardPanier {
     & img {
         border-radius: 10px;
         border: 1px solid #613659;
+        transition: transform 330ms ease-in-out;
+        &:hover {
+            transform: scale(.8);
+        }
     }
     &__body {
         font-size: 13px;

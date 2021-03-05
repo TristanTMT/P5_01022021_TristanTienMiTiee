@@ -190,9 +190,41 @@
   max-width: 100%;
 }
 
+.cardPanier a span {
+  position: absolute;
+  margin-top: 23px;
+  margin-left: -35px;
+  color: #00917c;
+  background: #ffe3fe;
+  padding: 15px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(0) rotate(-5deg);
+          transform: scale(0) rotate(-5deg);
+  -webkit-transition: -webkit-transform 330ms ease-in-out;
+  transition: -webkit-transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
+}
+
+.cardPanier a:hover span, .cardPanier a:focus span {
+  -webkit-transform: scale(1) rotate(0deg);
+          transform: scale(1) rotate(0deg);
+}
+
 .cardPanier img {
   border-radius: 10px;
   border: 1px solid #613659;
+  -webkit-transition: -webkit-transform 330ms ease-in-out;
+  transition: -webkit-transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
+}
+
+.cardPanier img:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .cardPanier__body {

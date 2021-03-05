@@ -31,7 +31,8 @@ function displayQuantity() {
                     <div class="containerCardPanier">
                         <figure class="cardPanier">
                             <a href="produit.html?id=${product._id}">
-                            <img class="" src="${product.imageUrl}" alt="">
+                            <img class="imgPanier" src="${product.imageUrl}" alt="">
+                            <span>Modifier votre ours Teddy !</span>
                             </a>
                             <figcaption class="cardPanier__body">
                                 <h2>${product.name}</h2>
@@ -53,7 +54,7 @@ function displayQuantity() {
           `<div class="total">
               <p class="cart-section totalPrice"><b>Total: ${(total/100).toFixed(2).replace(".",",")}€</b></p>
               <button class="cancel__ordered button">
-                  <p>Annuler le panier</p>
+                  <p>Vider le panier</p>
               </button>
           </div>`
       );
