@@ -1,0 +1,33 @@
+.contact-us {
+    width: 92%;
+    max-width: 300px;
+    margin: auto;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px #dddddd;
+    border-radius: 5px;
+    & form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    & input, select {
+        margin: 1rem 0 1rem 0;
+        padding: 0.5rem;
+        border: none;
+        border-bottom: solid 4px rgba(0, 0, 0, 1);
+        &:focus {
+            border-bottom: solid 4px $colorPanier;
+        }
+        &::placeholder {
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+    & span {
+        font-size: 15px;
+        color: red;
+    }
+}

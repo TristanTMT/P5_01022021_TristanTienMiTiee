@@ -1,0 +1,24 @@
+footer {
+    background: #1f1f1f;
+    & .containerfooter{
+        color: white;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    & .copyright {
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 10px;
+    }
+    
+}
+
+@media(min-width: 768px) {
+    footer {
+        & .containerfooter{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+
+
+.button {
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #613659;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8;
+}

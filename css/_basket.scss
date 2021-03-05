@@ -1,0 +1,74 @@
+.cardPanier {
+    background: white;
+    border-radius: 10px;
+    border: 5px solid #613659;
+    padding: 0.5rem;
+    max-width: 100%;
+}
+
+.cardPanier {
+    & img {
+        border-radius: 10px;
+        border: 1px solid #613659;
+    }
+    &__body {
+        font-size: 13px;
+    }
+}
+
+#deleteArticle {
+    background: #613659;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+#prixTotalPanier {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #2C3A47;
+    text-align: center;
+}
+
+@media(min-width:768px){
+    .cardPanier {
+        display: flex;
+    }
+    
+    .cardPanier {
+        & img {
+            height: 250px;
+            width: 200px;
+            margin-top: 8%;
+        }
+        &__body {
+            margin-left: 2rem;
+            font-size: 20px;
+        }
+    }
+}
+
+@media(min-width: 1024px){
+    .containerCardPanier{
+        padding: 0 10rem 0 10rem;
+    }
+    .cardPanier {
+        & img {
+            margin-top: 6%;
+        }
+    }
+}
+
+@media(min-width: 2560px){
+    #panier{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .cardPanier {
+        & img {
+            margin-top: 6%;
+        }
+    }
+}

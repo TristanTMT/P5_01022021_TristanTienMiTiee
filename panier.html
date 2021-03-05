@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <ul class="nav__list listStyle__header">
+                <li class="nav__item logo"><a href="#">Orinoco</a></li>
+                <li class="nav__item"><a href="index.html">Accueil</a></li>
+                <li class="nav__item panier"><a href="panier.html">Panier <i class="fas fa-paw"></i> <span class="quantityBasket item__number"></span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 class="title">Panier</h2>
+
+    <main id="panier" class="container">
+        <div id="panier__item">
+            <!-- JS to HTML-->
+        </div>
+
+        <h3 id="prixTotalPanier"></h3>
+    </main>
+
+    <!-- <div class="totalPrice" id="totalPrice">Prix total TTC : </div> -->
+    
+    <h3 id="prixTotalPanier"></h3>
+    <div class="contact-us">
+        <form method="" id="formOrder" class="contact__form">
+            <label for="lastname"></label>
+            <input class="form-input" type="text" id="lastname" placeholder="Votre nom" pattern="[A-Za-z\-]+"/>
+            <span id="nomInvalid"></span>
+            
+            <label for="firstname"></label>
+            <input class="form-input" type="text" id="firstname" placeholder="Votre prénom" pattern="[A-Za-z\-]+"/>
+            <span id="prenomInvalid"></span>
+            
+            <label for="email"></label>
+            <input class="form-input" type="email" id="email" placeholder="Votre e-mail" pattern="^[a-z0-9._-]@[a-z0-9._-]{2,}\.[a-z]{2,4}$"/>
+            <span id="emailInvalid"></span>
+            
+            <label for="address"></label>
+            <input class="form-input" type="text" id="address" placeholder="Adresse ligne 1"/>
+            <span id="addressInvalid"></span>
+            
+            <label for="city"></label>
+            <input class="form-input" type="text" id="city" placeholder="Ville"/>
+            <span id="cityInvalid"></span>
+            
+            <button id="confirmOrder" class="button">Valider l'achat</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="containerfooter">
+           <section class="footer__infos">
+              <h3>À propos</h3>
+              <ul>
+                  <li><a href="#">Qui sommes nous?</a></li>
+                  <li><a href="#">Nos engagements</a></li>
+                  <li><a href="#">Carte cadeau</a></li>
+                  <li><a href="#">Catalogue</a></li>
+              </ul>
+          </section>
+          <section class="footer__infos">
+              <h3>Orinoco&vous</h3>
+              <ul>
+                  <li><a href="#">Livraisons et retours</a></li>
+                  <li><a href="#">Services et garanties</a></li>
+                  <li><a href="#">Nous contacter</a></li>
+                  <li><a href="#">CGV</a></li>
+              </ul>
+          </section>
+          
+        </div>
+          
+          <div class="copyright">
+              <p>Copyright © 2020 Orinounours by Orinoco</p>
+              <p>Projet 5 - Parcours Developpeur Web - OpenClassrooms</p>
+          </div>
+    </footer>
+    <script src="./js_front/panier.js"></script>
+</body>
+</html>

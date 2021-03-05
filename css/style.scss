@@ -1,0 +1,121 @@
+@import "variables";
+@import "buttons";
+@import "productScreen";
+@import "basket";
+@import "formulaire";
+@import "confirm";
+@import "footer";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background: $colorBody;
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.listStyle__header {
+    list-style: none;
+}
+
+ul li {
+    color: white;
+}
+
+.header {
+    background: #1f1f1f;
+    padding: 1.5rem;
+}
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    & .nav__item {
+        margin-right: 0.5rem;
+        padding: 0.5rem;
+    }
+    & .nav__item.logo:first-child {
+        margin-right: auto;
+        margin-left: 0.5rem;
+        letter-spacing: 5px;
+        font-weight: bold;
+    }
+    & .nav__item.panier {
+        background: $colorPanier;
+        border-radius: 50px;
+        a {
+            color: #fff;
+        }
+    }
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    color: #2C3A47;
+    font-size: 30px;
+    text-align: center;
+}
+
+.logoSite {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logoTeddy {
+    height: 5rem;
+}
+
+#cards {
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (min-width: 1340px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        // grid-template-columns: repeat(4, 1fr);
+    }
+    @media screen and (min-width: 2560px) {
+        padding: 0 10rem 0 10rem;
+    }
+}
+
+.card {
+    background: $colorCard;
+    border-radius: 10px;
+    box-shadow: 1px 6px 14px 1px rgba(0, 0, 0, 0.2);
+    border: 5px solid #613659;
+    padding: 1rem;
+    &__image {
+        border-radius: 10px 10px 0 0;
+        height: 180px;
+        width: 100%;
+    }
+    &__body {
+        padding: 5px;
+        text-align: center;
+    }
+    &__body--content {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
